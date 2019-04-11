@@ -31,6 +31,8 @@ We also have the option of adding quality gates to the release process. For exam
 
 Then you define the different environments you want to deploy to and the steps that make up the deployment. Also, just like the build pipeline, the release pipeline is really just a set of tasks. There are many out-of-the-box tasks available, and you can build your own if needed. The first task our release requires is to set up the Azure deployment environment if it doesn't yet exist. Rather than having to manually create the Azure resources required to host the web app, the team has defined an Azure Resource Manager---or ARM---template that describes the environment in JSON. This allows the environment definition to be updated and managed like any other source file. 
 
+![](./images/contosoair-web.png)
+
 Adding Azure Boards to the mix deepens the integration, providing links from the build summary to the related code and work items for end-to-end traceability. By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. Azure Boards provides the scalability to grow as your organization and business needs grow
 
 ![](./images/azureboards-kanban.png)
