@@ -3,12 +3,13 @@
 
 In the previous demo, we saw how easy it is to setup automated CI/CD pipelines with Azure Pipelines to build, test and deploy application from GitHub and deploy to Azure. At Contoso, we develop applications in a cycle of continuous delivery: release a new feature or improvement; observe how well it works for the users; plan the next increment of development based on that knowledge. 
 
-In this demo, I am going to show you how we use Application Insights to monitor a web application for performance and usage. The Contoso Air website is the lifeline of the company and we want to monitor the web application in production. The website is instrumented to send usage and performance metrics to Application Insights. It is very easy to set this up. Once it is setup, the instrumentation monitors your app and sends telemetry data to the portal.  All these telemetry streams are integrated in the Azure portal, where you can apply powerful analytic and search tools to the raw data.
+In this demo, I am going to show you how we use Application Insights to monitor a web application for performance and usage. The Contoso Air website is the lifeline of the company and we  can't let it go down. So, with Application Insights we monitor the web application around the clock to make sure it is always on, always responsive and if things go down alert us so we are the first person to know.  
+
+The website is instrumented to send usage and performance metrics to Application Insights. It is very easy to set this up. Once it is setup, the app starts sending telemetry data to the portal.  All these telemetry streams are integrated in the Azure portal, where you can apply powerful analytic and search tools to the raw data.
 
 I can choose to see data for different time ranges, from the last 30 minutes to the last 30 days.   To make sure that the web application is continuously available, we monitor the availability and responsiveness of the web application - this is done by creating a simple web test that continuously pings the web URL from multiple locations and alerts if the availability of the site goes down. 
 
-Similarily we measure the responsiveness of the site. With Application Insights, we can measure performance of both server and client side operations and if we find anything slowing down, we can get into to the details to identify the root cause.
-
+Similarly we measure the responsiveness of the site. With Application Insights, we can measure performance of both server and client side operations and if we find anything slowing down, we can get into to the details to identify the root cause.
 
 Next, let me show you usage. Azure Application Insights helps us gain powerful insights into how our customers use our app. We get deep understanding of where customers such as where do they come from, how do they access your application in terms of browsers, network etc., what is the usage flow of your users. These information  help us answer questions such as:
 Which features of the app are most popular? Do your users achieve their goals with our app? Do they drop out at particular points, and do they return later? And with this knowledge, we make data driven decisions about our next development cycles.
